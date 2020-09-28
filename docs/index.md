@@ -1,3 +1,42 @@
+###### 20200929学习心得
+
+kafka相关操作
+
+#创建主题
+
+```kafka-topics.sh --create --zookeeper zookeeper2:2181 --replication-factor 1 --partitions 1 --topic mykafka
+​```
+kafka-topics.sh --create --zookeeper zookeeper2:2181 --replication-factor 1 --partitions 1 --topic mykafka
+​```
+```
+
+###### 运行一个消费生产者，指定的topic为刚刚创建的主题
+
+``` kafka-console-producer.sh --broker-list 172.22.0.7:9092 --topic mykafka
+​```
+kafka-console-producer.sh --broker-list 172.22.0.7:9092 --topic mykafka 
+​```
+```
+
+#输入消息信息
+
+``` eg: larry testing information here!!!
+​```
+eg: larry testing information here!!!
+​```
+```
+
+#消费者
+
+```
+​```
+kafka-console-consumer.sh --bootstrap-server 172.22.0.7:9092 --topic mykafka --from-beginning
+kafka-console-consumer.sh --bootstrap-server 172.22.0.7:9092 --topic test --from-beginning
+​```
+```
+
+
+
 ###### 20200928学习心得
 
 # #一阶标题或者快捷键ctrl+1
