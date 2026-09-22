@@ -22,10 +22,17 @@
 	  loadNavbar: true,
 	  coverpage: true,  //设置封面  ——converpage.md
 	  loadSidebar: true,
-	  subMaxLevel: 2
+	  subMaxLevel: 2,
+	  search: {
+        placeholder: '搜索...',
+        noData: '找不到结果',
+        depth: 2
+      }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="./static/js/docsify@4.js"></script>
+  <!-- 搜索插件 -->
+  <script src="./static/js/search.min.js"></script>
 </body>
 </html>
